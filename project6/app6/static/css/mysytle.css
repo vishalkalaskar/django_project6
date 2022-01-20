@@ -1,0 +1,18 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:darkblue;
+  color: white;
+  text-align: center;
+}
+.tata
+{
+   font-size:40px;
+   color: darkblue;
+}
+.name
+{
+   padding-left:50;
+}

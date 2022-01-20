@@ -1,0 +1,35 @@
+{%extends 'common.html'%}
+
+{%block menu%}
+    {%include 'main_menu.html'%}
+{%endblock%}
+
+{%block content%}
+  {%load static%}
+       <link rel="stylesheet" href ="{%static 'css/mysytle.css'%}">
+        <div class="container">
+            <div class="row justify-content-md-center">
+              <div class="col">
+                 <h3>ENGINEERING A BETTER WORLD WITH OUR NEIGHBORS</h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                 <img src="{%static 'images/inno.png'%}" align="left" height="250" width="150">
+<!--              </div>-->
+
+<!--              <div class="col">-->
+                   <p>Almost 70% of employers are hiring recent college graduates, with 25% of enterprise companies attending an average of 25 campus-recruitment events each season.
+                        This has created a totally different and very competitive landscape when it comes to College Recruitment.
+                        Employers can no longer expect to attract young talent by merely showing up at a career fair with some flyers, expecting students to flock to them.
+                        Generation Z job applicants know their worth, and they expect to be courted before they commit to working for your company. <br><br>
+                        In Engineering a better world, a company cannot approach College Recruitment like they used to.  That’s why Tata Technologies is setting itself apart from the rest in our approach to partnering with the right universities, putting together a strong plan with the right team.
+                        More importantly, we are looking ahead to see how we can scale this approach and improve the process and add value to all students we meet and speak with, while on campus. <br><br>
+                        With our recent move to Mid-Town Detroit, Tata Technologies has partnered with one of our neighbors, Wayne State University.  Wayne State University (WSU) has been a top university for research and a hub for innovation and entrepreneurship in the city since its inception in 1868.  This natural partnership has given Tata Technologies the privilege to participate in the most recent Engineering and IT Career Fair on the WSU Campus last month. This was the first opportunity for Tata Technologies to introduce us to the students, alumni, and faculty in a face-to-face environment and a chance to set the tone for the partnership to come.
+                   </p>
+              </div>
+            </div>
+        </div>
+
+{%endblock%}

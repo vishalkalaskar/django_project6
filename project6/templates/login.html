@@ -1,0 +1,35 @@
+{%extends 'common.html'%}
+{%block menu%}
+    {%include 'main_menu.html'%}
+{%endblock%}
+
+{%block content%}
+       <br>
+       <h1 style="text-align:center; color:yellow;">login on TTL</h1>
+
+       <form style="text-align:center "class="login" method="post" action="{%url 'login'%}">
+          {%csrf_token%}
+           <br>
+           <input type="hidden" name="name" autofocus/>
+           <i class="fa fa-user"></i>
+           <br>
+         <input type="text" name="username" placeholder="Username" autofocus/>
+         <i class="fa fa-user"></i>
+         <br><br>
+         <input type="password"  name="pass" placeholder="Password" />
+         <i class="fa fa-key"></i>
+          <br><br>
+         <a href="#">Forgot your password?</a>
+           <br><br>
+
+         <button>
+           <i class="spinner"></i>
+           <span class="state">Log in</span>
+         </button>
+        {%if messg%}
+           <h3 style="color:red; text-align:center;">{{messg}}</h3>
+        {%endif%}
+       </form>
+
+
+{%endblock%}
